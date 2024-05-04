@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Signup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="notification success">
+        <span>Your success message here</span>
+        <button class="close-button">&times;</button>
+      </div>
+      
+      <div class="notification error">
+        <span>Your error message here</span>
+        <button class="close-button">&times;</button>
+      </div>
+    <div class="tab-container">
+        <button class="tab active" onclick="location.href='index.html'">Home</button>
+        <button class="tab" onclick="location.href='blogs.html'">Blogs</button>
+        <button class="tab" onclick="location.href='myworks.html'">My Works</button>
+        <a href="logout.html" class="tab logout">Logout</a>
+    </div>
+  <div class="container">
+    <div class="card" id="login-card">
+      <div class="forms-container">
+        <form id="login-form">
+          <h2>Login</h2>
+          <input type="email" id="login-email" placeholder="Email" required>
+          <input type="password" id="login-password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <div class="message">
+          Not registered? <a href="#" id="signup-link">Create an account</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="signup-card" style="display: none;">
+      <div class="forms-container">
+        <form id="signup-form">
+          <h2>Signup</h2>
+          <input type="text" id="signup-username" placeholder="Username" required>
+          <input type="email" id="signup-email" placeholder="Email" required>
+          <input type="password" id="signup-password" placeholder="Password" required>
+          <button type="submit">Signup</button>
+        </form>
+        <div class="message">
+          Already registered? <a href="#" id="login-link">Sign in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

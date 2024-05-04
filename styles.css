@@ -1,0 +1,205 @@
+/* Styles for login.html and signup.html */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eff8e2; /* Background color */
+  margin: 0; /* Remove default margin */
+}
+
+.container {
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%; /* Full width */
+}
+
+.tab {
+  padding: 10px 20px; /* Decreased padding */
+  background-color: #573280; /* Tab background color */
+  color: #eff8e2; /* Tab text color */
+  border: none;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0; /* Slightly rounded corners */
+  transition: all 0.3s; /* Smooth transition for all properties */
+}
+
+.tab.active {
+  background-color: #573280; /* Keep the same color for the active tab */
+  color: #eff8e2; /* Change the text color for the active tab */
+}
+
+.tab:hover {
+  background-color: #521481; /* Darken the background color on hover */
+}
+
+.tab-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%; /* Full width */
+}
+
+.tab {
+  padding: 10px 15px; /* Decreased padding */
+  background-color: #573280;
+  color: #eff8e2;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s;
+  margin-right: 30px; /* Add space between tabs */
+}
+
+.tab:last-child {
+  margin-right: 0; /* Remove margin from the last tab */
+}
+
+.tab.active {
+  background-color: #573280; /* Keep the same color for the active tab */
+  color: #eff8e2; /* Change the text color for the active tab */
+}
+
+.tab:hover {
+  background-color: #521481; /* Darken the background color on hover */
+}
+
+.card {
+  background-color: #cecfc7; /* Card background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.forms-container {
+  padding: 20px;
+}
+
+/* Additional styles for login form */
+.login-form {
+  margin-top: 20px; /* Add space between tabs and form */
+}
+
+/* Additional styles for signup form */
+.signup-form {
+  margin-top: 20px; /* Add space between tabs and form */
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Existing CSS styles */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #cecfc7; /* Card background color */
+}
+
+.forms-container {
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #eff8e2; /* Input background color */
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #23022e; /* Button background color */
+  color: #eff8e2; /* Button text color */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #573280; /* Button hover background color */
+}
+
+.message {
+  text-align: center;
+  color: #23022e; /* Message text color */
+}
+
+.message a {
+  color: #573280; /* Link color */
+  text-decoration: none;
+}
+
+/* Notification styles */
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  z-index: 9999;
+  display: none; /* Initially hidden */
+}
+
+.notification.success {
+  background-color: #4caf50; /* Success notification color */
+}
+
+.notification.error {
+  background-color: #f44336; /* Error notification color */
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
